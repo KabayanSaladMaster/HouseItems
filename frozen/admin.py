@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import FrozenItems
+from .models import FrozenItem
 
 # Register your models here.
-admin.site.register(FrozenItems)
+admin.site.register(FrozenItem)

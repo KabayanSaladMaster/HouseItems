@@ -20,5 +20,6 @@ from . import views
 urlpatterns = [
     url('admin/', admin.site.urls),
     url(r'^frozen/', include('frozen.urls')),
+    url(r'^frozen/boost/', include('frozen.urls')),
     url(r'^$', views.home),
 ]

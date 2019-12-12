@@ -3,4 +3,5 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.frozen),
+    url(r'^boost', views.boost)
 ]
