@@ -1,10 +1,11 @@
 from django.shortcuts import render
-from .models import FrozenItems
+from .models import FrozenItem
+
 
 # Create your views here.
 
 def frozen(request):
-    frozen = FrozenItems.objects.all()[0]
+    frozen = FrozenItem.objects.all()[0]
     return render(request, 'frozen/frozen.html', {'frozen':frozen})
 
 def boost(request):
