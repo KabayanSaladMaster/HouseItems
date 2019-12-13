@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "/home/jacob/PythonEnvironment/Django_env/bin/python",
+    "python.pythonPath": "/home/jacob/.local/share/virtualenvs/DjangoPro-RqmUB-TO/bin/python",
     "python.testing.pytestArgs": [
         "."
     ],

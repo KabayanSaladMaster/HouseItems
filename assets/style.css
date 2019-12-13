@@ -1,0 +1,26 @@
+
+p {
+    font-weight: bold;
+}
+
+.item-box {
+    margin: 10px;
+    color: red;
+}
+
+#frozen_items {
+    display: flex;
+    flex-wrap: wrap;
+    border: solid black 2px;
+    margin: 5px 5px;
+    height: 200px;
+    width: 200px;
+}
+
+#item_price::before {
+    content: 'Price: '
+}
+
+#item_quantity::before {
+    content: 'Quantity: '
+}
