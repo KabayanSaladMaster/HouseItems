@@ -9,8 +9,6 @@ p {
 }
 
 #frozen_items {
-    display: flex;
-    flex-wrap: wrap;
     border: solid black 2px;
     margin: 5px 5px;
     height: 200px;
@@ -23,4 +21,9 @@ p {
 
 #item_quantity::before {
     content: 'Quantity: '
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
