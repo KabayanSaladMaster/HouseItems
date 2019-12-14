@@ -6,12 +6,12 @@
     </head>
     <body>
         <p>Hello</p>
-        <div class='w3-container w3-animate-zoom w3-card-4'>
-            <div class=''>
-                <a href="{% url 'frozenhome' %}">
-                    <input type='image' src='/static/index.png'>
-                </a>
-            </div>
+
+        <a href="{% url 'frozenhome' %}">
+            <button>
+                <img src="/static/index.png" />
+            </button>
+        </a>
         </div>
     </body>
     <style>
@@ -21,6 +21,8 @@
         }
         button {
             padding:0%;
+            width: 100%;
+            margin-left: 16px;
         }
     </style>
 
