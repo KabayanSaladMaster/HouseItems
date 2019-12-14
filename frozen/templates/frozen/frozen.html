@@ -11,10 +11,28 @@
         </div>
     </div>
 </div>
+<div class='modal' id='belly_modal' >
+    <div class='modal-dialog modal-xl'>
+        <div class='modal-content'>
+            {% if Belly %}
+                <img src='{{Belly.image.url}}' style="width:100%;"/>
+            {% endif %}
+        </div>
+    </div>
+</div>
+<div class='modal' id='belly_modal' >
+    <div class='modal-dialog modal-xl'>
+        <div class='modal-content'>
+            {% if Belly %}
+                <img src='{{Belly.image.url}}' style="width:100%;"/>
+            {% endif %}
+        </div>
+    </div>
+</div>
 <!---->
 <br />
 <br />
-<h1 class='text-center'>Pork Products</h1>
+<h1 class='text-center'>Pork Products test</h1>
 <br />
 <br />
 <div class='row items text-center container-fluid'>
@@ -26,7 +44,6 @@
                 <button data-toggle="modal" data-target="#belly_modal">
                     <img class='float-left' src='{{Belly.image.url}}' />
                 </button>
-                
             <div class='card-footer'>
                 <p id='item_quantity'>{{Belly.quantity}}</p>
                 <p id='item_price'>{{Belly.price}}</p>
