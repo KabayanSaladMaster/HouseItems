@@ -4,11 +4,14 @@ p {
 }
 
 #item_price::before {
-    content: 'Price: '
+    content: 'Price: RO '
 }
 
+#item_quantity::after {
+    content: ' pcs';
+}
 #item_quantity::before {
-    content: 'Quantity: '
+    content: 'Available: '
 }
 
 img {
@@ -16,10 +19,4 @@ img {
     height: auto;
 }
 
-.frozen_item {
-    margin-top: 30px;
-}
-
-.frozen_name {
-    font-size: 5vw;
 }

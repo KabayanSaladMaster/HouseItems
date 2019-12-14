@@ -1,20 +1,70 @@
 {% extends 'base_layout.html' %}
 
 {% block content %}
-    <div class='frozen_items row'>
-    {% for frozen in frozens %}
-        <div class='frozen_item card container text-center font-weight-bold'>
-            <div class='frozen_name header'>
-                <p class='display-10'>{{frozen.item_name}}</p>
-            </div>
-            <div class='card-body'>
-                <img class='card-body' src='{{frozen.image.url}}'/>
-            </div>
+<!--Images-->
+<div class='modal' id='belly_modal' >
+    <div class='modal-dialog modal-xl'>
+        <div class='modal-content'>
+            {% if Belly %}
+                <img src='{{Belly.image.url}}' style="width:100%;"/>
+            {% endif %}
+        </div>
+    </div>
+</div>
+<!---->
+<br />
+<br />
+<h1 class='text-center'>Pork Products</h1>
+<br />
+<br />
+<div class='row items text-center container-fluid'>
+
+    <div class='col-sm-3 container-fluid animated zoomIn'>
+        {% if Belly %}
+        <div class='card'>
+            <p class='card-header'>{{Belly.item_name}}</p>
+                <button data-toggle="modal" data-target="#belly_modal">
+                    <img class='float-left' src='{{Belly.image.url}}' />
+                </button>
+                
             <div class='card-footer'>
-                <p id='item_price'>{{frozen.price}}</p>
-                <p id='item_quantity'>{{frozen.quantity}}</p>
+                <p id='item_quantity'>{{Belly.quantity}}</p>
+                <p id='item_price'>{{Belly.price}}</p>
             </div>
         </div>
-    {% endfor %}
+        {% endif %}
     </div>
+    <div class='col-sm-3 container-fluid animated zoomIn'>
+        {% if Blood %}
+        <div class='card'>
+            <p class='card-header'>{{Blood.item_name}}</p>
+            <img src='{{Blood.image.url}}' />
+            <div class='card-footer'>
+                <p id='item_quantity'>{{Blood.quantity}}</p>
+                <p id='item_price'>{{Blood.price}}</p>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+    <div class='col-sm-3 container-fluid animated zoomIn'>
+        {% if Liver %}
+        <div class='card'>
+            <p class='card-header'>{{Liver.item_name}}</p>
+            <img src='{{Liver.image.url}}' />
+            <div class='card-footer'>
+                <p id='item_quantity'>{{Liver.quantity}}</p>
+                <p id='item_price'>{{Liver.price}}</p>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+<!--EXTRA-------------------------------------------------------------------------------->
+<!--EXTRA-------------------------------------------------------------------------------->
+<!--EXTRA-------------------------------------------------------------------------------->
+<!--EXTRA-------------------------------------------------------------------------------->
+<!--EXTRA-------------------------------------------------------------------------------->
+<!--EXTRA-------------------------------------------------------------------------------->
+
 {% endblock %}

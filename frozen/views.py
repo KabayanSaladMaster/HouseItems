@@ -7,7 +7,17 @@ from django.http import HttpResponse
 
 def frozen(request):
     frozens = FrozenItem.objects.all().order_by('item_name')
-    return render(request, 'frozen/frozen.html', {'frozens':frozens})
+    items = (
+        FrozenItem.objects.all()[0],
+        FrozenItem.objects.all()[1],
+        FrozenItem.objects.all()[2],
+    )
+    return render(request, 'frozen/frozen.html', 
+        {
+         'Belly':items[0],
+         'Blood':items[1],
+         'Liver':items[2],
+         },)
 
 def frozen_details(request, slug):
     return HttpResponse(slug)
