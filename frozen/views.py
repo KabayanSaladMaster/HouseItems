@@ -12,11 +12,23 @@ def frozen(request):
     )
     return render(request, 'frozen/frozen.html', 
         {
-         'Belly':frozens[0],
          'Chicharon':frozens[1],
-         'RenoSpread':frozens[3],
          'ArgentinaSpread':frozens[2],
-         'ArgentinaFSausage':frozens[5]
+         'RenoSpread':frozens[3],
+         'ArgentinaSSisig':frozens[4],
+         'ArgentinaFSausage':frozens[5],
+
+         'Belly':frozens[0],
+         'PorkChop':frozens[6],
+         'TenderJumbo':frozens[7],
+         'TenderClassic':frozens[8],
+         'Longanisa':frozens[9],
+         'Tocino':frozens[10],
+         'PorkBlood':frozens[11],
+         'EarChop':frozens[12],
+         'Throaters':frozens[13],
+         'RibsChop':frozens[14],
+         'PataSlice':frozens[15],
          },)
 
 def frozen_details(request, slug):

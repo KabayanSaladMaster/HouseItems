@@ -1,7 +1,13 @@
 {% extends 'base_layout.html' %}
 
 {% block content %}
+
 <!--Images preview-->
+<!-------------------------------------------------------------------->
+<!-------------------------------------------------------------------->
+<!-------------------------------------------------------------------->
+
+<!--FROZEN------------------------------------------------------->
 <div class='modal' id='belly_modal' >
     <div class='modal-dialog modal-xl'>
         <div class='modal-content'>
@@ -11,30 +17,172 @@
         </div>
     </div>
 </div>
-<div class='modal' id='belly_modal' >
+<div class='modal' id='PorkChop_modal' >
     <div class='modal-dialog modal-xl'>
         <div class='modal-content'>
-            {% if Belly %}
-                <img src='{{Belly.image.url}}' style="width:100%;"/>
+            {% if PorkChop %}
+                <img src='{{PorkChop.image.url}}' style="width:100%;"/>
             {% endif %}
         </div>
     </div>
 </div>
-<div class='modal' id='belly_modal' >
+<div class='modal' id='PorkChop_modal' >
     <div class='modal-dialog modal-xl'>
         <div class='modal-content'>
-            {% if Belly %}
-                <img src='{{Belly.image.url}}' style="width:100%;"/>
+            {% if PorkChop %}
+                <img src='{{PorkChop.image.url}}' style="width:100%;"/>
             {% endif %}
         </div>
     </div>
 </div>
-<!---->
+<div class='modal' id='Longanisa_modal' >
+    <div class='modal-dialog modal-xl'>
+        <div class='modal-content'>
+            {% if Longanisa %}
+                <img src='{{Longanisa.image.url}}' style="width:100%;"/>
+            {% endif %}
+        </div>
+    </div>
+</div>
+<div class='modal' id='Tocino_modal' >
+    <div class='modal-dialog modal-xl'>
+        <div class='modal-content'>
+            {% if Tocino %}
+                <img src='{{Tocino.image.url}}' style="width:100%;"/>
+            {% endif %}
+        </div>
+    </div>
+</div>
+<div class='modal' id='PorkBlood_modal' >
+    <div class='modal-dialog modal-xl'>
+        <div class='modal-content'>
+            {% if Tocino %}
+                <img src='{{PorkBlood.image.url}}' style="width:100%;"/>
+            {% endif %}
+        </div>
+    </div>
+</div>
+<div class='modal' id='EarChop_modal' >
+    <div class='modal-dialog modal-xl'>
+        <div class='modal-content'>
+            {% if Tocino %}
+                <img src='{{EarChop.image.url}}' style="width:100%;"/>
+            {% endif %}
+        </div>
+    </div>
+</div>
+<div class='modal' id='Throaters_modal' >
+    <div class='modal-dialog modal-xl'>
+        <div class='modal-content'>
+            {% if Throaters %}
+                <img src='{{Throaters.image.url}}' style="width:100%;"/>
+            {% endif %}
+        </div>
+    </div>
+</div>
+<div class='modal' id='RibsChop_modal' >
+    <div class='modal-dialog modal-xl'>
+        <div class='modal-content'>
+            {% if RibsChop %}
+                <img src='{{RibsChop.image.url}}' style="width:100%;"/>
+            {% endif %}
+        </div>
+    </div>
+</div>
+<div class='modal' id='PataSlice_modal' >
+    <div class='modal-dialog modal-xl'>
+        <div class='modal-content'>
+            {% if PataSlice %}
+                <img src='{{PataSlice.image.url}}' style="width:100%;"/>
+            {% endif %}
+        </div>
+    </div>
+</div>
+<div class='modal' id='TenderJumbo_modal' >
+    <div class='modal-dialog modal-xl'>
+        <div class='modal-content'>
+            {% if TenderJumbo %}
+                <img src='{{TenderJumbo.image.url}}' style="width:100%;"/>
+            {% endif %}
+        </div>
+    </div>
+</div>
+<div class='modal' id='TenderClassic_modal' >
+    <div class='modal-dialog modal-xl'>
+        <div class='modal-content'>
+            {% if TenderClassic %}
+                <img src='{{TenderClassic.image.url}}' style="width:100%;"/>
+            {% endif %}
+        </div>
+    </div>
+</div>
+<!--------------------------------------------------------------------------->
+
+<!--DRYFOODS-->
+<div class='modal' id='Chicharon_modal' >
+    <div class='modal-dialog modal-xl'>
+        <div class='modal-content'>
+            {% if Chicharon %}
+                <img src='{{Chicharon.image.url}}' style="width:100%;"/>
+            {% endif %}
+        </div>
+    </div>
+</div>
+<div class='modal' id='ArgentinaSpread_modal' >
+    <div class='modal-dialog modal-xl'>
+        <div class='modal-content'>
+            {% if ArgentinaSpread %}
+                <img src='{{ArgentinaSpread.image.url}}' style="width:100%;"/>
+            {% endif %}
+        </div>
+    </div>
+</div>
+<div class='modal' id='RenoSpread_modal' >
+    <div class='modal-dialog modal-xl'>
+        <div class='modal-content'>
+            {% if RenoSpread %}
+                <img src='{{RenoSpread.image.url}}' style="width:100%;"/>
+            {% endif %}
+        </div>
+    </div>
+</div>
+<div class='modal' id='ArgentinaSSisig_modal' >
+    <div class='modal-dialog modal-xl'>
+        <div class='modal-content'>
+            {% if ArgentinaSSisig %}
+                <img src='{{ArgentinaSSisig.image.url}}' style="width:100%;"/>
+            {% endif %}
+        </div>
+    </div>
+</div>
+<div class='modal' id='ArgentinaFSausage_modal' >
+    <div class='modal-dialog modal-xl'>
+        <div class='modal-content'>
+            {% if ArgentinaFSausage %}
+                <img src='{{ArgentinaFSausage.image.url}}' style="width:100%;"/>
+            {% endif %}
+        </div>
+    </div>
+</div>
+<!--END IMAGE PREVIEW------------------------------------------------>
+<!-------------------------------------------------------------------->
+<!-------------------------------------------------------------------->
+<!-------------------------------------------------------------------->
+
+
+<!--Heading-->
+<!-------------------------------------------------------------------->
+<!-------------------------------------------------------------------->
 <br />
 <br />
 <h1 class='text-center'>Pork Foods</h1>
 <br />
 <br />
+
+
+<!--NAV BAR-->
+<!-------------------------------------------------------------------->
+<!-------------------------------------------------------------------->
 <div class='sticky-top'>
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark p-3">
   <ul class="navbar-nav float-right">
@@ -47,9 +195,23 @@
   </ul>
 </nav>
 </div>
+<!-------------------------------------------------------------------->
+<!-------------------------------------------------------------------->
+
+
+<!--HEADING-->
+<!-------------------------------------------------------------------->
+<!-------------------------------------------------------------------->
 <br />
 <br />
-<h2 class='text-center' id='frozenfoods'>FROZEN FOODS</h2>
+<h2 class='text-center' id='frozenfoods'>FROZEN</h2>
+<!-------------------------------------------------------------------->
+<!-------------------------------------------------------------------->
+
+
+<!--ROW1-->
+<!-------------------------------------------------------------------->
+<!-------------------------------------------------------------------->
 <div class='row items text-center container-fluid p-4'>
     <div class='col-sm-3 container-fluid animated zoomIn mt-4'>
         {% if Belly %}
@@ -65,43 +227,199 @@
         </div>
         {% endif %}
     </div>
-    <!--
     <div class='col-sm-3 container-fluid animated zoomIn mt-4'>
-        {% if Blood %}
+        {% if PorkChop %}
         <div class='card'>
-            <p class='card-header'>{{Blood.item_name}}</p>
-            <img src='{{Blood.image.url}}' />
+            <p class='card-header'>{{PorkChop.item_name}}</p>
+            <button data-toggle="modal" data-target="#PorkChop_modal">
+                <img src='{{PorkChop.image.url}}' />
+            </button>
             <div class='card-footer'>
-                <p id='item_quantity'>{{Blood.quantity}}</p>
-                <p id='item_price'>{{Blood.price}}</p>
+                <p id='item_quantity'>{{PorkChop.quantity}}</p>
+                <p id='item_price'>{{PorkChop.price}}</p>
             </div>
         </div>
         {% endif %}
     </div>
     <div class='col-sm-3 container-fluid animated zoomIn mt-4'>
-        {% if Liver %}
+        {% if Throaters %}
         <div class='card'>
-            <p class='card-header'>{{Liver.item_name}}</p>
-            <img src='{{Liver.image.url}}' />
+            <p class='card-header'>{{Throaters.item_name}}</p>
+            <button data-toggle="modal" data-target="#Throaters_modal">
+                <img src='{{Throaters.image.url}}' />
+            </button>
             <div class='card-footer'>
-                <p id='item_quantity'>{{Liver.quantity}}</p>
-                <p id='item_price'>{{Liver.price}}</p>
+                <p id='item_quantity'>{{Throaters.quantity}}</p>
+                <p id='item_price'>{{Throaters.price}}</p>
             </div>
         </div>
         {% endif %}
-    </div>-->
+    </div>
 </div>
+<!-------------------------------------------------------------------->
+<!-------------------------------------------------------------------->
+
+
+<!--ROW2----------------------------------------------------------------->
+<!-------------------------------------------------------------------->
+<div class='row items text-center container-fluid p-4'>
+    <div class='col-sm-3 container-fluid animated zoomIn mt-4'>
+        {% if PataSlice %}
+        <div class='card'>
+            <p class='card-header'>{{PataSlice.item_name}}</p>
+                <button data-toggle="modal" data-target="#PataSlice_modal">
+                    <img class='float-left' src='{{PataSlice.image.url}}' />
+                </button>
+            <div class='card-footer'>
+                <p id='item_quantity'>{{PataSlice.quantity}}</p>
+                <p id='item_price'>{{PataSlice.price}}</p>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+    <div class='col-sm-3 container-fluid animated zoomIn mt-4'>
+        {% if RibsChop %}
+        <div class='card'>
+            <p class='card-header'>{{RibsChop.item_name}}</p>
+            <button data-toggle="modal" data-target="#RibsChop_modal">
+                <img src='{{RibsChop.image.url}}' />
+            </button>
+            <div class='card-footer'>
+                <p id='item_quantity'>{{RibsChop.quantity}}</p>
+                <p id='item_price'>{{RibsChop.price}}</p>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+    <div class='col-sm-3 container-fluid animated zoomIn mt-4'>
+        {% if EarChop %}
+        <div class='card'>
+            <p class='card-header'>{{EarChop.item_name}}</p>
+            <button data-toggle="modal" data-target="#EarChop_modal">
+                <img src='{{EarChop.image.url}}' />
+            </button>
+            <div class='card-footer'>
+                <p id='item_quantity'>{{EarChop.quantity}}</p>
+                <p id='item_price'>{{EarChop.price}}</p>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+<!-------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------->
+
+
+<!--ROW3----------------------------------------------------------------->
+<!-------------------------------------------------------------------->
+<div class='row items text-center container-fluid p-4'>
+    <div class='col-sm-3 container-fluid animated zoomIn mt-4'>
+        {% if PorkBlood %}
+        <div class='card'>
+            <p class='card-header'>{{PorkBlood.item_name}}</p>
+                <button data-toggle="modal" data-target="#PorkBlood_modal">
+                    <img class='float-left' src='{{PorkBlood.image.url}}' />
+                </button>
+            <div class='card-footer'>
+                <p id='item_quantity'>{{PorkBlood.quantity}}</p>
+                <p id='item_price'>{{PorkBlood.price}}</p>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+    <div class='col-sm-3 container-fluid animated zoomIn mt-4'>
+        {% if Longanisa %}
+        <div class='card'>
+            <p class='card-header'>{{Longanisa.item_name}}</p>
+            <button data-toggle="modal" data-target="#Longanisa_modal">
+                <img src='{{Longanisa.image.url}}' />
+            </button>
+            <div class='card-footer'>
+                <p id='item_quantity'>{{Longanisa.quantity}}</p>
+                <p id='item_price'>{{Longanisa.price}}</p>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+    <div class='col-sm-3 container-fluid animated zoomIn mt-4'>
+        {% if Tocino %}
+        <div class='card'>
+            <p class='card-header'>{{Tocino.item_name}}</p>
+            <button data-toggle="modal" data-target="#Tocino_modal">
+                <img src='{{Tocino.image.url}}' />
+            </button>
+            <div class='card-footer'>
+                <p id='item_quantity'>{{Tocino.quantity}}</p>
+                <p id='item_price'>{{Tocino.price}}</p>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+<!-------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------->
+
+
+<!--ROW4----------------------------------------------------------------->
+<!-------------------------------------------------------------------->
+<div class='row items text-center container-fluid p-4'>
+    <div class='col-sm-3 container-fluid animated zoomIn mt-4'>
+        {% if TenderJumbo %}
+        <div class='card'>
+            <p class='card-header'>{{TenderJumbo.item_name}}</p>
+                <button data-toggle="modal" data-target="#TenderJumbo_modal">
+                    <img class='float-left' src='{{TenderJumbo.image.url}}' />
+                </button>
+            <div class='card-footer'>
+                <p id='item_quantity'>{{TenderJumbo.quantity}}</p>
+                <p id='item_price'>{{TenderJumbo.price}}</p>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+    <div class='col-sm-3 container-fluid animated zoomIn mt-4'>
+        {% if TenderClassic %}
+        <div class='card'>
+            <p class='card-header'>{{TenderClassic.item_name}}</p>
+            <button data-toggle="modal" data-target="#TenderClassic_modal">
+                <img src='{{TenderClassic.image.url}}' />
+            </button>
+            <div class='card-footer'>
+                <p id='item_quantity'>{{TenderClassic.quantity}}</p>
+                <p id='item_price'>{{TenderClassic.price}}</p>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+    <div class='col-sm-3 container-fluid animated zoomIn mt-4'>
+        <!--EMPTY-->
+    </div>
+</div>
+<!-------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------->
+
+
+<!--HEADING-->
+<!-------------------------------------------------------------------->
+<!-------------------------------------------------------------------->
 <br />
 <br />
 <h2 class='text-center' id='dryfoods'>Dry Foods</h2>
 <br />
 <br />
+<!-------------------------------------------------------------------->
+<!-------------------------------------------------------------------->
+
+
+<!--ROW1-->
+<!-------------------------------------------------------------------->
+<!-------------------------------------------------------------------->
 <div class='row items text-center container-fluid p-4'>
     <div class='col-sm-3 container-fluid animated zoomIn mt-4'>
         {% if Chicharon %}
         <div class='card'>
             <p class='card-header'>{{Chicharon.item_name}}</p>
-                <button data-toggle="modal" data-target="#belly_modal">
+                <button data-toggle="modal" data-target="#Chicharon_modal">
                     <img class='float-left' src='{{Chicharon.image.url}}' />
                 </button>
             <div class='card-footer'>
@@ -115,7 +433,7 @@
         {% if RenoSpread %}
         <div class='card'>
             <p class='card-header'>{{RenoSpread.item_name}}</p>
-                <button data-toggle="modal" data-target="#belly_modal">
+                <button data-toggle="modal" data-target="#RenoSpread_modal">
                     <img class='float-left' src='{{RenoSpread.image.url}}' />
                 </button>
             <div class='card-footer'>
@@ -129,7 +447,7 @@
         {% if ArgentinaSpread %}
         <div class='card'>
             <p class='card-header'>{{ArgentinaSpread.item_name}}</p>
-                <button data-toggle="modal" data-target="#belly_modal">
+                <button data-toggle="modal" data-target="#ArgentinaSpread_modal">
                     <img class='float-left' src='{{ArgentinaSpread.image.url}}' />
                 </button>
             <div class='card-footer'>
@@ -140,12 +458,18 @@
         {% endif %}
     </div>
 </div>
+<!-------------------------------------------------------------------->
+<!-------------------------------------------------------------------->
+
+
+<!--ROW2-->
+<!-------------------------------------------------------------------->
 <div class='row items text-center container-fluid p-4'>
     <div class='col-sm-3 container-fluid animated zoomIn mt-4'>
         {% if ArgentinaFSausage %}
         <div class='card'>
             <p class='card-header'>{{ArgentinaFSausage.item_name}}</p>
-                <button data-toggle="modal" data-target="#belly_modal">
+                <button data-toggle="modal" data-target="#ArgentinaFSausage_modal">
                     <img class='float-left' src='{{ArgentinaFSausage.image.url}}' />
                 </button>
             <div class='card-footer'>
@@ -155,7 +479,28 @@
         </div>
         {% endif %}
     </div>
+    <div class='col-sm-3 container-fluid animated zoomIn mt-4'>
+        {% if ArgentinaSSisig %}
+        <div class='card'>
+            <p class='card-header'>{{ArgentinaSSisig.item_name}}</p>
+                <button data-toggle="modal" data-target="#ArgentinaSSisig_modal">
+                    <img class='float-left' src='{{ArgentinaSSisig.image.url}}' />
+                </button>
+            <div class='card-footer'>
+                <p id='item_quantity'>{{ArgentinaSSisig.quantity}}</p>
+                <p id='item_price'>{{ArgetinaSSisig.price}}</p>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+    <div class='col-sm-3 container-fluid'>
+        <!--EMPTY-->
+    </div>
 </div>
+<!-------------------------------------------------------------------->
+<!-------------------------------------------------------------------->
+
+
 <!--EXTRA------------------------------------------------------------------------------------->
 <!--EXTRA-------------------------------------------------------------------------------->
 <!--EXTRA-------------------------------------------------------------------------------->
