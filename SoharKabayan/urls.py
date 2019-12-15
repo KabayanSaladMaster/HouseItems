@@ -23,8 +23,7 @@ from django.conf import settings
 
 urlpatterns = [
     url('admin/', admin.site.urls),
-    url(r'^frozen/', include('frozen.urls')),
-    url(r'^$', views.home),
+    url(r'^$', include('frozen.urls')),
 ]
 
 urlpatterns += staticfiles_urlpatterns()

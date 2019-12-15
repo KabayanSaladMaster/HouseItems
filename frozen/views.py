@@ -6,17 +6,17 @@ from django.http import HttpResponse
 # Create your views here.
 
 def frozen(request):
-    frozens = FrozenItem.objects.all().order_by('item_name')
+    frozens = FrozenItem.objects.all()
     items = (
         FrozenItem.objects.all()[0],
-        FrozenItem.objects.all()[1],
-        FrozenItem.objects.all()[2],
     )
     return render(request, 'frozen/frozen.html', 
         {
-         'Belly':items[0],
-         'Blood':items[1],
-         'Liver':items[2],
+         'Belly':frozens[0],
+         'Chicharon':frozens[1],
+         'RenoSpread':frozens[3],
+         'ArgentinaSpread':frozens[2],
+         'ArgentinaFSausage':frozens[5]
          },)
 
 def frozen_details(request, slug):

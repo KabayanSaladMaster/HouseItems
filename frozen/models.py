@@ -8,6 +8,7 @@ class FrozenItem(models.Model):
     quantity = models.IntegerField()
     price = models.DecimalField(max_digits=1000,decimal_places=3)
     image = models.ImageField(blank=True)
+    type = models.CharField(max_length=20,default='NULL')
 
     def __str__(self):
         return self.item_name
